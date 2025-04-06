@@ -107,6 +107,101 @@ const mockRestaurants: Restaurant[] = [
       { id: '3', time: '2:00 PM', isBooked: false }
     ]
   }
+  id: '5',
+  name: 'GOBBLERS',
+  image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
+  description: 'A diverse menu featuring both vegetarian and non-vegetarian bowls, wraps, and kebabs',
+  contact: {
+    phone: '+91 98765 43210',
+    email: 'contact@gobblers.com',
+    address: 'Near C Block'
+  },
+  dishes: [
+    // Veg Items
+    { id: '47', name: 'Khichdi Bowl', price: 149, description: 'Comfort food made with rice and lentils', cuisine: 'indian', category: 'veg', dietaryRestrictions: ['vegetarian'], restaurantId: '5' },
+    { id: '48', name: 'Rajma Rice Bowl', price: 169, description: 'Kidney beans curry served with steamed rice', cuisine: 'indian', category: 'veg', dietaryRestrictions: ['vegetarian'], restaurantId: '5' },
+    { id: '49', name: 'Dilli Chola Rice Bowl', price: 169, description: 'Delhi-style chickpea curry with rice', cuisine: 'indian', category: 'veg', dietaryRestrictions: ['vegetarian'], restaurantId: '5' },
+    { id: '50', name: 'Dal Makhni Rice Bowl', price: 179, description: 'Creamy black lentils served with rice', cuisine: 'indian', category: 'veg', dietaryRestrictions: ['vegetarian'], restaurantId: '5' },
+    { id: '51', name: 'Paneer Makhni Rice Bowl', price: 189, description: 'Cottage cheese in rich tomato gravy', cuisine: 'indian', category: 'veg', dietaryRestrictions: ['vegetarian'], restaurantId: '5' },
+    { id: '52', name: 'Paneer Lahori Rice Bowl', price: 189, description: 'Lahori-style spiced paneer curry', cuisine: 'indian', category: 'veg', dietaryRestrictions: ['vegetarian'], restaurantId: '5' },
+    { id: '53', name: 'Chinese Paneer Rice Bowl', price: 189, description: 'Indo-Chinese style paneer preparation', cuisine: 'chinese', category: 'veg', dietaryRestrictions: ['vegetarian'], restaurantId: '5' },
+    { id: '54', name: 'Red Sauce Pasta Bowl', price: 159, description: 'Pasta in tangy tomato sauce', cuisine: 'italian', category: 'veg', dietaryRestrictions: ['vegetarian'], restaurantId: '5' },
+    { id: '55', name: 'White Sauce Pasta Bowl', price: 159, description: 'Creamy white sauce pasta', cuisine: 'italian', category: 'veg', dietaryRestrictions: ['vegetarian'], restaurantId: '5' },
+    { id: '56', name: 'Mix Sauce Pasta Bowl', price: 159, description: 'Best of both sauces combined', cuisine: 'italian', category: 'veg', dietaryRestrictions: ['vegetarian'], restaurantId: '5' },
+    // Non-Veg Items
+    { id: '57', name: 'Chicken Makhni Rice Bowl', price: 189, description: 'Butter chicken with steamed rice', cuisine: 'indian', category: 'non-veg', dietaryRestrictions: ['non-vegetarian'], restaurantId: '5' },
+    { id: '58', name: 'Prawn Makhni Rice Bowl', price: 189, description: 'Prawns in rich butter gravy', cuisine: 'indian', category: 'non-veg', dietaryRestrictions: ['non-vegetarian'], restaurantId: '5' },
+    { id: '59', name: 'Chicken Biryani Bowl', price: 199, description: 'Aromatic chicken biryani', cuisine: 'indian', category: 'non-veg', dietaryRestrictions: ['non-vegetarian'], restaurantId: '5' },
+    { id: '60', name: 'Prawn Biryani Bowl', price: 199, description: 'Flavorful prawn biryani', cuisine: 'indian', category: 'non-veg', dietaryRestrictions: ['non-vegetarian'], restaurantId: '5' }
+  ],
+  timeSlots: [
+    { id: '1', time: '12:00 PM', isBooked: false },
+    { id: '2', time: '1:00 PM', isBooked: false },
+    { id: '3', time: '2:00 PM', isBooked: false }
+  ]
+},
+{
+  id: '6',
+  name: 'ZERO DEGREE CAFE',
+  image: 'https://images.unsplash.com/photo-1570091376680-9ed2168000ce?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
+  description: 'Refreshing beverages and light bites in a cozy atmosphere',
+  contact: {
+    phone: '+91 98765 12345',
+    email: 'contact@zerodegree.com',
+    address: 'Near D Block'
+  },
+  dishes: [
+    // Beverages
+    { id: '61', name: 'Classic Lemonade', price: 50, description: 'Refreshing classic lemonade', cuisine: 'american', category: 'veg', dietaryRestrictions: ['vegetarian', 'vegan'], restaurantId: '6' },
+    { id: '62', name: 'Virgin Mint Mojito', price: 80, description: 'Refreshing mint-flavored mojito', cuisine: 'american', category: 'veg', dietaryRestrictions: ['vegetarian', 'vegan'], restaurantId: '6' },
+    { id: '63', name: 'Green Apple Mojito', price: 80, description: 'Green apple flavored refreshing drink', cuisine: 'american', category: 'veg', dietaryRestrictions: ['vegetarian', 'vegan'], restaurantId: '6' },
+    { id: '64', name: 'Watermelon Mojito', price: 80, description: 'Fresh watermelon mojito', cuisine: 'american', category: 'veg', dietaryRestrictions: ['vegetarian', 'vegan'], restaurantId: '6' },
+    // Shakes
+    { id: '65', name: 'Chocolate Shake', price: 70, description: 'Rich chocolate milkshake', cuisine: 'american', category: 'veg', dietaryRestrictions: ['vegetarian'], restaurantId: '6' },
+    { id: '66', name: 'Oreo Shake', price: 80, description: 'Creamy Oreo milkshake', cuisine: 'american', category: 'veg', dietaryRestrictions: ['vegetarian'], restaurantId: '6' },
+    { id: '67', name: 'Nutella Shake', price: 80, description: 'Indulgent Nutella shake', cuisine: 'american', category: 'veg', dietaryRestrictions: ['vegetarian'], restaurantId: '6' },
+    // Snacks
+    { id: '68', name: 'Hot Chocolate Brownie', price: 60, description: 'Warm chocolate brownie', cuisine: 'american', category: 'veg', dietaryRestrictions: ['vegetarian'], restaurantId: '6' },
+    { id: '69', name: 'Vada Pav', price: 30, description: 'Mumbai\'s favorite street food', cuisine: 'street-food', category: 'veg', dietaryRestrictions: ['vegetarian'], restaurantId: '6' },
+    { id: '70', name: 'Chicken Caesar Salad', price: 120, description: 'Classic Caesar salad with chicken', cuisine: 'american', category: 'non-veg', dietaryRestrictions: ['non-vegetarian'], restaurantId: '6' }
+  ],
+  timeSlots: [
+    { id: '1', time: '12:00 PM', isBooked: false },
+    { id: '2', time: '1:00 PM', isBooked: false },
+    { id: '3', time: '2:00 PM', isBooked: false }
+  ]
+},
+{
+  id: '7',
+  name: 'THE CHINA TOWN',
+  image: 'https://images.unsplash.com/photo-1585032226651-759b368d7246?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
+  description: 'Authentic Chinese cuisine with a wide variety of vegetarian and non-vegetarian options',
+  contact: {
+    phone: '+91 98765 98765',
+    email: 'contact@chinatown.com',
+    address: 'Near E Block'
+  },
+  dishes: [
+    // Veg Starters
+    { id: '71', name: 'French Fries', price: 110, description: 'Crispy golden fries', cuisine: 'chinese', category: 'veg', dietaryRestrictions: ['vegetarian', 'vegan'], restaurantId: '7' },
+    { id: '72', name: 'Peri Peri Fries', price: 120, description: 'Spicy peri peri seasoned fries', cuisine: 'chinese', category: 'veg', dietaryRestrictions: ['vegetarian', 'vegan'], restaurantId: '7' },
+    { id: '73', name: 'Veg Spring Roll', price: 135, description: 'Crispy rolls with vegetable filling', cuisine: 'chinese', category: 'veg', dietaryRestrictions: ['vegetarian'], restaurantId: '7' },
+    { id: '74', name: 'Crispy Chilly Potato', price: 150, description: 'Spicy crispy potato strips', cuisine: 'chinese', category: 'veg', dietaryRestrictions: ['vegetarian', 'vegan'], restaurantId: '7' },
+    { id: '75', name: 'Chilly Paneer Dry', price: 190, description: 'Spicy Indo-Chinese style paneer', cuisine: 'chinese', category: 'veg', dietaryRestrictions: ['vegetarian'], restaurantId: '7' },
+    // Non-Veg Starters
+    { id: '76', name: 'Chicken Spring Roll', price: 180, description: 'Crispy rolls with chicken filling', cuisine: 'chinese', category: 'non-veg', dietaryRestrictions: ['non-vegetarian'], restaurantId: '7' },
+    { id: '77', name: 'Chicken Lollypop', price: 250, description: 'Spicy chicken lollypops', cuisine: 'chinese', category: 'non-veg', dietaryRestrictions: ['non-vegetarian'], restaurantId: '7' },
+    { id: '78', name: 'Drums of Heaven', price: 250, description: 'Spicy chicken wings', cuisine: 'chinese', category: 'non-veg', dietaryRestrictions: ['non-vegetarian'], restaurantId: '7' },
+    { id: '79', name: 'Dragon Chicken', price: 260, description: 'Spicy Indo-Chinese chicken', cuisine: 'chinese', category: 'non-veg', dietaryRestrictions: ['non-vegetarian'], restaurantId: '7' },
+    { id: '80', name: 'Chicken 65', price: 250, description: 'South Indian style spicy chicken', cuisine: 'chinese', category: 'non-veg', dietaryRestrictions: ['non-vegetarian'], restaurantId: '7' }
+  ],
+  timeSlots: [
+    { id: '1', time: '12:00 PM', isBooked: false },
+    { id: '2', time: '1:00 PM', isBooked: false },
+    { id: '3', time: '2:00 PM', isBooked: false }
+  ]
+}
+];
 ];
 
 function App() {
